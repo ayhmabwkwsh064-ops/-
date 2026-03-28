@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>منصة شرح المواد الجامعية</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <h1 class="logo">UniExplain</h1>
+        <ul>
+          <li><a href="#subjects">المواد</a></li>
+          <li><a href="#features">المميزات</a></li>
+          <li><a href="#contact">تواصل</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content container">
+        <div>
+          <p class="tag">تعلم بذكاء • شروحات مبسطة • أمثلة عملية</p>
+          <h2>موقع متخصص في شرح المواد الجامعية بطريقة سهلة ومنظمة</h2>
+          <p>
+            نوفر لك ملخصات، فيديوهات، وبنوك أسئلة في أهم التخصصات الجامعية مثل
+            الرياضيات، البرمجة، الفيزياء، والإدارة.
+          </p>
+          <a class="btn" href="#subjects">ابدأ التعلم الآن</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="subjects" class="container section">
+        <h3>أقسام المواد</h3>
+        <div class="grid">
+          <article class="card">
+            <h4>الرياضيات</h4>
+            <p>تفاضل، تكامل، جبر خطي، وإحصاء مع أمثلة محلولة خطوة بخطوة.</p>
+          </article>
+          <article class="card">
+            <h4>علوم الحاسب</h4>
+            <p>هياكل بيانات، خوارزميات، قواعد بيانات، وهندسة برمجيات.</p>
+          </article>
+          <article class="card">
+            <h4>الفيزياء</h4>
+            <p>ميكانيكا، كهرباء ومغناطيسية، ومحاكاة مسائل شائعة في الاختبارات.</p>
+          </article>
+          <article class="card">
+            <h4>إدارة وأعمال</h4>
+            <p>محاسبة، اقتصاد، إدارة مشاريع، وتسويق بأسلوب مبسط.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="section alt">
+        <div class="container">
+          <h3>لماذا هذا الموقع؟</h3>
+          <ul class="feature-list">
+            <li>خطة دراسة أسبوعية جاهزة لكل مادة.</li>
+            <li>اختبارات قصيرة تفاعلية بعد كل درس.</li>
+            <li>صفحة تتبع مستوى الطالب وتقدمه.</li>
+            <li>محتوى مناسب بالعربية مع مصطلحات أكاديمية دقيقة.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="container section">
+        <h3>اشترك ليصلك الجديد</h3>
+        <form id="subscribe-form" class="subscribe-form">
+          <input type="text" name="name" placeholder="الاسم الكامل" required />
+          <input type="email" name="email" placeholder="البريد الإلكتروني" required />
+          <button type="submit" class="btn">اشترك</button>
+        </form>
+        <p id="message" class="message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 UniExplain - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

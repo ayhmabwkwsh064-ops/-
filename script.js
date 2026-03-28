@@ -1,12 +1,24 @@
-const form = document.querySelector("#subscribe-form");
-const message = document.querySelector("#message");
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+const formNote = document.getElementById("formNote");
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+if (menuBtn) {
+  menuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+}
 
-  const formData = new FormData(form);
-  const name = formData.get("name");
-
-  message.textContent = `شكرًا ${name}! تم تسجيل اشتراكك بنجاح.`;
-  form.reset();
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("open");
+  });
 });
+
+function fakeSubmit(event) {
+  event.preventDefault();
+  formNote.textContent = "تم إرسال الرسالة بشكل تجريبي. اربط النموذج لاحقًا مع البريد أو واتساب أو Google Forms.";
+  event.target.reset();
+  return false;
+}
+
+window.fakeSubmit = fakeSubmit;

@@ -1,85 +1,266 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>منصة شرح المواد الجامعية</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="hero">
-      <nav class="nav container">
-        <h1 class="logo">UniExplain</h1>
-        <ul>
-          <li><a href="#subjects">المواد</a></li>
-          <li><a href="#features">المميزات</a></li>
-          <li><a href="#contact">تواصل</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>منصة أيهم التعليمية</title>
+  <meta name="description" content="منصة عربية لتدريس مواد الجامعة بطريقة واضحة ومنظمة مع خطط دراسة وملخصات وتمارين." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#home" class="logo">منصة <span>أيهم</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
+      <nav id="navMenu">
+        <a href="#subjects">المواد</a>
+        <a href="#features">المميزات</a>
+        <a href="#plan">الخطة</a>
+        <a href="#faq">الأسئلة</a>
+        <a href="#contact" class="nav-cta">تواصل</a>
       </nav>
+    </div>
+  </header>
 
-      <div class="hero-content container">
-        <div>
-          <p class="tag">تعلم بذكاء • شروحات مبسطة • أمثلة عملية</p>
-          <h2>موقع متخصص في شرح المواد الجامعية بطريقة سهلة ومنظمة</h2>
-          <p>
-            نوفر لك ملخصات، فيديوهات، وبنوك أسئلة في أهم التخصصات الجامعية مثل
-            الرياضيات، البرمجة، الفيزياء، والإدارة.
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="tag">موقع جاهز لتدريس مواد الجامعة</p>
+          <h1>اشرح موادك الجامعية بطريقة <span>مرتبة</span> وسهلة ومقنعة</h1>
+          <p class="lead">
+            موقع شخصي حديث لعرض المواد، رفع الملخصات، تنظيم الخطة الدراسية، والتواصل مع الطلبة
+            بشكل احترافي وواضح على الجوال والكمبيوتر.
           </p>
-          <a class="btn" href="#subjects">ابدأ التعلم الآن</a>
+          <div class="hero-actions">
+            <a href="#subjects" class="btn primary">استعرض المواد</a>
+            <a href="#contact" class="btn secondary">ابدأ الآن</a>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <strong>6+</strong>
+              <span>مواد أساسية</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>تصميم متجاوب</span>
+            </div>
+            <div class="stat">
+              <strong>24/7</strong>
+              <span>متاح للعرض</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="screen-card">
+            <div class="screen-top">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="screen-content">
+              <h3>الفصل الحالي</h3>
+              <ul>
+                <li>المحاسبة المالية</li>
+                <li>محاسبة التكاليف</li>
+                <li>المحاسبة الإدارية</li>
+                <li>محاسبة البنوك</li>
+                <li>الضرائب</li>
+                <li>Excel للأعمال</li>
+              </ul>
+              <div class="mini-box">
+                <p>ملخصات + تمارين + اختبارات قصيرة</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section id="subjects" class="container section">
-        <h3>أقسام المواد</h3>
-        <div class="grid">
+    <section class="section" id="subjects">
+      <div class="container">
+        <div class="section-head">
+          <p class="tag">المواد التي يمكن عرضها</p>
+          <h2>نظّم موادك داخل بطاقات واضحة</h2>
+        </div>
+
+        <div class="cards">
           <article class="card">
-            <h4>الرياضيات</h4>
-            <p>تفاضل، تكامل، جبر خطي، وإحصاء مع أمثلة محلولة خطوة بخطوة.</p>
+            <h3>المحاسبة المالية</h3>
+            <p>شروحات مبسطة للقوائم المالية، القيود، التسويات، والأمثلة العملية.</p>
           </article>
           <article class="card">
-            <h4>علوم الحاسب</h4>
-            <p>هياكل بيانات، خوارزميات، قواعد بيانات، وهندسة برمجيات.</p>
+            <h3>محاسبة التكاليف</h3>
+            <p>تبويب عناصر التكاليف، الأوامر الإنتاجية، ونقاط التركيز قبل الامتحان.</p>
           </article>
           <article class="card">
-            <h4>الفيزياء</h4>
-            <p>ميكانيكا، كهرباء ومغناطيسية، ومحاكاة مسائل شائعة في الاختبارات.</p>
+            <h3>المحاسبة الإدارية</h3>
+            <p>القرارات الإدارية، الموازنات، تحليل الانحرافات، والأدوات الحديثة.</p>
           </article>
           <article class="card">
-            <h4>إدارة وأعمال</h4>
-            <p>محاسبة، اقتصاد، إدارة مشاريع، وتسويق بأسلوب مبسط.</p>
+            <h3>محاسبة البنوك</h3>
+            <p>مفاهيم مصرفية أساسية، القيود البنكية، والعمليات المالية الشائعة.</p>
+          </article>
+          <article class="card">
+            <h3>الضرائب</h3>
+            <p>عرض موضوعات الضريبة بأسلوب تدريجي مع أمثلة ومسائل تدريبية.</p>
+          </article>
+          <article class="card">
+            <h3>Excel و المهارات العملية</h3>
+            <p>ملفات تطبيقية، صيغ مهمة، وتنظيم العمل الجامعي والمهني.</p>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="features" class="section alt">
-        <div class="container">
-          <h3>لماذا هذا الموقع؟</h3>
-          <ul class="feature-list">
-            <li>خطة دراسة أسبوعية جاهزة لكل مادة.</li>
-            <li>اختبارات قصيرة تفاعلية بعد كل درس.</li>
-            <li>صفحة تتبع مستوى الطالب وتقدمه.</li>
-            <li>محتوى مناسب بالعربية مع مصطلحات أكاديمية دقيقة.</li>
-          </ul>
+    <section class="section muted" id="features">
+      <div class="container">
+        <div class="section-head">
+          <p class="tag">لماذا هذا الموقع مناسب لك</p>
+          <h2>مميزات تساعدك على تقديم نفسك بشكل احترافي</h2>
         </div>
-      </section>
 
-      <section id="contact" class="container section">
-        <h3>اشترك ليصلك الجديد</h3>
-        <form id="subscribe-form" class="subscribe-form">
-          <input type="text" name="name" placeholder="الاسم الكامل" required />
-          <input type="email" name="email" placeholder="البريد الإلكتروني" required />
-          <button type="submit" class="btn">اشترك</button>
+        <div class="features-grid">
+          <div class="feature">
+            <h3>تصميم عربي أنيق</h3>
+            <p>واجهة نظيفة واتجاه من اليمين لليسار لتناسب الطلبة العرب بسهولة.</p>
+          </div>
+          <div class="feature">
+            <h3>سريع وخفيف</h3>
+            <p>بدون تعقيد أو إضافات ثقيلة، ويمكن تشغيله مباشرة على GitHub Pages.</p>
+          </div>
+          <div class="feature">
+            <h3>قابل للتعديل</h3>
+            <p>يمكنك لاحقًا تعديل أسماء المواد، الأسعار، الروابط، وطرق التواصل بسهولة.</p>
+          </div>
+          <div class="feature">
+            <h3>متجاوب مع الهاتف</h3>
+            <p>الصفحة مرتبة على الشاشات الصغيرة والكبيرة حتى لو دخل الطالب من الموبايل.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plan">
+      <div class="container plan-grid">
+        <div>
+          <p class="tag">كيف تعرض خطتك</p>
+          <h2>خطة دراسة واضحة للطلبة</h2>
+          <p class="lead small">
+            اعرض للطلبة ماذا سيتعلمون، وما الذي سيحصلون عليه، وكيف سيتابعون معك خطوة بخطوة.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>1</span>
+            <div>
+              <h3>شرح الدرس</h3>
+              <p>فهم الفكرة الأساسية بطريقة سهلة ومباشرة.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span>2</span>
+            <div>
+              <h3>ملخص مرتب</h3>
+              <p>نقاط مركزة تساعد الطالب على المراجعة السريعة.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span>3</span>
+            <div>
+              <h3>أسئلة وتدريب</h3>
+              <p>تمارين واختبارات قصيرة لتثبيت المعلومة.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span>4</span>
+            <div>
+              <h3>تهيئة للامتحان</h3>
+              <p>مراجعة نهائية لأهم الأفكار المتوقعة.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonial-section">
+      <div class="container">
+        <div class="section-head">
+          <p class="tag">انطباع الموقع</p>
+          <h2>واجهة تعطي ثقة ووضوح</h2>
+        </div>
+        <div class="testimonial">
+          <p>
+            "هذا النوع من المواقع مناسب جدًا لأي مدرس أو دكتور أو دكتورة يريدون عرض المواد،
+            الشرح، والروابط في مكان واحد بشكل مرتب وسهل للطلبة."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="tag">أسئلة شائعة</p>
+          <h2>أمور قد تحتاج تعديلها لاحقًا</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>هل أستطيع تغيير أسماء المواد؟</summary>
+            <p>نعم، فقط عدّل النصوص داخل ملف <strong>index.html</strong>.</p>
+          </details>
+          <details>
+            <summary>هل أستطيع إضافة ملفات PDF وروابط محاضرات؟</summary>
+            <p>نعم، يمكن ربط كل مادة بملف أو صفحة خاصة أو فيديو أو مجلد خارجي.</p>
+          </details>
+          <details>
+            <summary>هل الموقع يعمل مجانًا على GitHub Pages؟</summary>
+            <p>نعم، بعد رفع الملفات وتفعيل Pages سيعمل كرابط مباشر على الإنترنت.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="tag">تواصل</p>
+          <h2>ابدأ بنسختك الخاصة</h2>
+          <p class="lead small">
+            هذه نسخة أولية جاهزة، ويمكن لاحقًا إضافة رقم واتساب، نموذج تسجيل، روابط ملفات، أو صفحة لكل مادة.
+          </p>
+        </div>
+
+        <form class="contact-card" onsubmit="return fakeSubmit(event)">
+          <label>
+            الاسم
+            <input type="text" placeholder="اكتب اسمك" required />
+          </label>
+          <label>
+            البريد الإلكتروني
+            <input type="email" placeholder="name@example.com" required />
+          </label>
+          <label>
+            الرسالة
+            <textarea rows="4" placeholder="اكتب ما الذي تريد إضافته للموقع"></textarea>
+          </label>
+          <button type="submit" class="btn primary full">إرسال</button>
+          <p class="form-note" id="formNote"></p>
         </form>
-        <p id="message" class="message" aria-live="polite"></p>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      <p>© 2026 UniExplain - جميع الحقوق محفوظة</p>
-    </footer>
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© 2026 منصة أيهم التعليمية — جميع الحقوق محفوظة</p>
+      <a href="#home">العودة للأعلى</a>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
